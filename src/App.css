@@ -1,0 +1,45 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+}
+
+.header-container {
+    text-align: center;
+}
+
+.secondary-container {
+    padding: 100px 150px;
+    background-color: #656B7B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.query-btn {
+    background-color: #2FBC4E;
+    border: 2px solid #2FBC4E;
+    border-radius: 3px;
+    padding: 10px 25px;
+    font-size: 25px;
+    color: #F1F3F4;
+}
+
+.attribute-btn { 
+    background-color: #FF6C37;
+    border: 2px solid #FF6C37;
+    border-radius: 3px;
+    padding: 10px 25px;
+    font-size: 25px;
+    filter: drop-shadow(15px 15px #30323B);
+    color: #30323B;
+}
+
+.query-btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.query-btn:active {
+    transform: scale(0.95);
+}
