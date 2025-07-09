@@ -1,19 +1,74 @@
 .main-container {
     display: flex;
+    flex-direction: row;
+    gap: 20px;
     justify-content: center;
+    margin-top: 2em;
 }
 
 .header-container {
     text-align: center;
 }
 
+.attr-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
 .secondary-container {
     padding: 100px 150px;
     background-color: #656B7B;
     display: flex;
+    max-width: 500px;
+    max-height: 720px;
     flex-direction: column;
     align-items: center;
     gap: 25px;
+}
+
+.gallery-container {
+    background-color: rgba(233, 234, 237, 0.75);
+    color: #30323B;
+    width: 250px;
+    max-width: 250px;
+    max-height: 720px;
+    overflow-y: auto;
+}
+
+.banned-container {
+    background-color: rgba(233, 234, 237, 0.75);
+    color: #30323B;
+    width: 250px;
+    max-width: 250px;
+    max-height: 720px;
+    overflow-y: auto;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.bolds {
+    font-weight: bold;
+}
+
+.italics {
+    font-style: italic;
+}
+
+.headers {
+    text-align: center;
+    padding: 10px;
+}
+
+.normal {
+    font-weight: normal;
+    color: black;
 }
 
 .query-btn {
@@ -21,18 +76,40 @@
     border: 2px solid #2FBC4E;
     border-radius: 3px;
     padding: 10px 25px;
-    font-size: 25px;
+    font-size: 20px;
     color: #F1F3F4;
+}
+
+.flight-card {
+    background-color: rgba(233, 234, 237, 0.5);
+    justify-items: center;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid rgba(233, 234, 237, 1);
 }
 
 .attribute-btn { 
     background-color: #FF6C37;
     border: 2px solid #FF6C37;
     border-radius: 3px;
-    padding: 10px 25px;
-    font-size: 25px;
-    filter: drop-shadow(15px 15px #30323B);
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    filter: drop-shadow(5px 5px #30323B);
     color: #30323B;
+}
+
+.one-line {
+    white-space: nowrap;
+}
+
+.attribute-btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.attribute-btn:active {
+    transform: scale(0.95);
 }
 
 .query-btn:hover {
@@ -42,4 +119,9 @@
 
 .query-btn:active {
     transform: scale(0.95);
+}
+
+.airplane-sim-desc {
+    font-style: italic;
+    color: lightgray;
 }
